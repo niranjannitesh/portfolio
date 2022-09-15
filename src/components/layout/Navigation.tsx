@@ -24,7 +24,7 @@ const NavItem: React.FC<{ href: string; title: string }> = ({
 
 const Navigation: React.FC = () => {
   return (
-    <div className="fixed left-0 right-0 flex justify-center bottom-24">
+    <div className="fixed left-0 right-0 flex justify-center bottom-4 sm:bottom-24">
       <div className="flex justify-center w-full max-w-xl mx-auto sm:justify-start">
         <nav className="bg-[#0F0F0F] border border-[#1B1B1B] p-1 rounded-full flex text-sm">
           <NavItem href="/" title="Home" />

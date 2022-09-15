@@ -9,7 +9,7 @@ const NavItem: React.FC<{ href: string; title: string }> = ({
   return (
     <NextLink href={href} prefetch={false}>
       <a
-        className={`font-medium px-5 py-2.5 rounded-full relative ${
+        className={`font-medium px-5 py-2.5 rounded-full relative transition-all ${
           isActive && "bg-[#1A1A1A] "
         }`}
       >

@@ -1,5 +1,6 @@
 import type { NextPage } from "next"
 import Head from "next/head"
+import NextLink from "next/link"
 
 const HomePage: NextPage = () => {
   return (
@@ -8,7 +9,7 @@ const HomePage: NextPage = () => {
         <title>Nitesh Kumar Niranjan — Product Designer / Developer</title>
       </Head>
       <div className="px-6">
-        <main className="w-full max-w-xl mx-auto -mt-20">
+        <main className="w-full max-w-xl mx-auto mt-10 mb-20">
           <h1 className="text-xl font-medium">Hey 🙋 I&apos;m Nitesh.</h1>
           <p className="mt-4 text-[#676767]">
             I&apos;m a 20-year-old <s>designer, developer, and tinkerer</s>{" "}

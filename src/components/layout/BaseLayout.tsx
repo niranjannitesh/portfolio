@@ -4,7 +4,7 @@ import Navigation from "./Navigation"
 const BaseLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div
-      className="flex flex-col justify-center min-h-screen bg-repeat-y"
+      className="flex flex-col justify-center min-h-screen bg-repeat"
       style={{
         backgroundImage: `url(/img/bg-noise.png)`,
       }}

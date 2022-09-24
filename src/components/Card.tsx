@@ -27,7 +27,7 @@ export function Card({ as: Component = "div", className, children }: any) {
 Card.Link = function CardLink({ children, ...props }: any) {
   return (
     <>
-      <div className="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 bg-zinc-50 group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
+      <div className="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 group-hover:scale-100 group-hover:opacity-100 bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
       <Link {...props}>
         <span className="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl" />
         <span className="relative z-10">{children}</span>
@@ -38,7 +38,7 @@ Card.Link = function CardLink({ children, ...props }: any) {
 
 Card.Title = function CardTitle({ as: Component = "h2", href, children }: any) {
   return (
-    <Component className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
+    <Component className="text-base font-semibold text-zinc-100">
       {href ? <Card.Link href={href}>{children}</Card.Link> : children}
     </Component>
   )

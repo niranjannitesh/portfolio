@@ -35,7 +35,7 @@ const BlogPage: NextPage<{ articles: any[] }> = ({ articles }) => {
   return (
     <>
       <Head>
-        <title>Nitesh Kumar Niranjan — Product Designer / Developer</title>
+        <title>Blogs — theux.dev</title>
       </Head>
       <div className="px-6">
         <main className="w-full max-w-2xl mx-auto mt-10 mb-20">

@@ -12,7 +12,7 @@ const HomePage: NextPage = () => {
         <main className="w-full max-w-xl mx-auto mt-10 mb-20">
           <h1 className="text-xl font-medium">Hey 🙋 I&apos;m Nitesh.</h1>
           <p className="mt-4 text-[#676767]">
-            I&apos;m a 20-year-old <s>designer, developer, and tinkerer</s>{" "}
+            I&apos;m a 21-year-old <s>designer, developer, and tinkerer</s>{" "}
             <span className="border-b text-transparent bg-clip-text bg-gradient-to-r from-[#A855F7] to-[#F59E0B] border-[#242424] py-1">
               hacker
             </span>
@@ -29,14 +29,13 @@ const HomePage: NextPage = () => {
           </p>
           <div className="mt-8">
             <p className="text-[#676767]">
-              Previsouly <br className="sm:hidden" />
-              <span className="text-[#CDCDCD] border-b border-[#242424] py-2">
-                Tech Co-founder
+              <span className="text-[#CDCDCD] border-b border-[#242424] py-2 pr-1">
+                Tech Lead
               </span>{" "}
               at{" "}
-              <a href="https://nowandme.com" target="_blank" rel="noreferrer">
-                <span className="bg-[#0F0F0F] inline-flex items-center gap-2 border border-[#161616] px-5 py-3 rounded-full text-[#B9B9B9] font-medium ml-2">
-                  Now&amp;Me
+              <a href="https://ripen.in" target="_blank" rel="noreferrer">
+                <span className="bg-[#0F0F0F] inline-flex items-center gap-2 border border-[#161616] px-5 py-2 rounded-full text-[#B9B9B9] font-medium ml-1">
+                  Ripen
                   <svg
                     fill="none"
                     viewBox="0 0 24 24"
@@ -80,21 +79,6 @@ const HomePage: NextPage = () => {
                   fillRule="evenodd"
                   d="M8.177 22.292c9.812 0 15.177-8.335 15.177-15.563 0-.237-.005-.472-.015-.707A11.004 11.004 0 0026 3.19c-.956.435-1.984.729-3.063.86a5.467 5.467 0 002.345-3.025 10.539 10.539 0 01-3.387 1.328A5.268 5.268 0 0018.001.625c-2.946 0-5.334 2.45-5.334 5.47 0 .428.046.846.138 1.246C8.37 7.112 4.44 4.936 1.809 1.626a5.562 5.562 0 00-.722 2.75c0 1.897.942 3.573 2.374 4.553a5.196 5.196 0 01-2.416-.685v.07c0 2.65 1.838 4.861 4.279 5.362a5.217 5.217 0 01-2.41.094c.68 2.173 2.649 3.755 4.984 3.8A10.534 10.534 0 010 19.834a14.83 14.83 0 008.177 2.457"
                 />
-              </svg>
-            </a>
-            <a
-              href="https://www.instagram.com/theux.dev"
-              target="_blank"
-              rel="noreferrer"
-              className="w-9 h-9 flex items-center justify-center hover:bg-[#1A1A1A] rounded-lg"
-            >
-              <svg
-                fill="currentColor"
-                viewBox="0 0 26 26"
-                width={24}
-                height={24}
-              >
-                <path d="M13.001 0c-3.53 0-3.973.015-5.36.079C6.257.142 5.312.36 4.486.683a6.366 6.366 0 00-2.303 1.499 6.382 6.382 0 00-1.5 2.302C.36 5.311.14 6.256.077 7.64.016 9.026 0 9.47 0 13c0 3.53.016 3.972.079 5.359.063 1.384.282 2.329.604 3.155a6.37 6.37 0 001.499 2.303 6.366 6.366 0 002.302 1.5c.827.322 1.772.541 3.156.604C9.026 25.985 9.47 26 13 26c3.53 0 3.972-.015 5.359-.079 1.384-.063 2.33-.282 3.157-.604a6.36 6.36 0 002.301-1.5 6.382 6.382 0 001.5-2.303c.32-.826.54-1.771.604-3.155.063-1.386.079-1.828.079-5.359 0-3.53-.016-3.974-.079-5.36-.065-1.384-.284-2.329-.604-3.156a6.38 6.38 0 00-1.5-2.302 6.354 6.354 0 00-2.302-1.5c-.829-.321-1.774-.54-3.158-.603C16.97.015 16.529 0 12.997 0h.004zm-1.186 2.17H13c3.529 0 3.947.013 5.34.076 1.289.059 1.988.274 2.454.455a4.09 4.09 0 011.518.989c.463.462.75.903.99 1.52.18.465.396 1.164.454 2.453.064 1.393.077 1.812.077 5.339s-.013 3.945-.077 5.339c-.059 1.288-.274 1.988-.455 2.453a4.086 4.086 0 01-.989 1.518 4.087 4.087 0 01-1.518.989c-.466.181-1.165.396-2.454.455-1.393.063-1.811.077-5.34.077s-3.947-.014-5.34-.077c-1.288-.06-1.988-.275-2.454-.456a4.093 4.093 0 01-1.52-.988 4.096 4.096 0 01-.988-1.52c-.181-.465-.397-1.164-.455-2.453-.064-1.393-.076-1.811-.076-5.34 0-3.53.012-3.946.076-5.34.059-1.288.274-1.988.455-2.453a4.09 4.09 0 01.989-1.52 4.101 4.101 0 011.52-.99c.465-.181 1.165-.396 2.453-.455 1.22-.055 1.692-.072 4.155-.074v.003zm7.956 2.164a1.354 1.354 0 100 2.709 1.354 1.354 0 000-2.71zM13 6.5a6.5 6.5 0 100 13.002A6.5 6.5 0 0013 6.5zm0 2.167a4.333 4.333 0 110 8.666 4.333 4.333 0 010-8.666z" />
               </svg>
             </a>
             <a

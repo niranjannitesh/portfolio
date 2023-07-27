@@ -70,12 +70,12 @@ const HomePage: NextPage = () => {
           <div className="mt-8">
             <p className="text-[#676767]">
               <span className="text-[#CDCDCD] border-b border-[#242424] py-2 pr-1">
-                Tech Lead
+                Principal Software Engineer
               </span>{" "}
               at{" "}
-              <a href="https://ripen.in" target="_blank" rel="noreferrer">
+              <a href="https://atlys.com" target="_blank" rel="noreferrer">
                 <span className="bg-[#0F0F0F] inline-flex items-center gap-2 border border-[#161616] px-5 py-2 rounded-full text-[#B9B9B9] font-medium ml-1">
-                  Ripen
+                  Atlys
                   <svg
                     fill="none"
                     viewBox="0 0 24 24"

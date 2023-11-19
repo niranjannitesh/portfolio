@@ -70,7 +70,7 @@ const HomePage: NextPage = () => {
           <div className="mt-8">
             <p className="text-[#676767]">
               <span className="text-[#CDCDCD] border-b border-[#242424] py-2 pr-1">
-                Principal Software Engineer
+                Product, Growth & Engineering
               </span>{" "}
               at{" "}
               <a href="https://atlys.com" target="_blank" rel="noreferrer">

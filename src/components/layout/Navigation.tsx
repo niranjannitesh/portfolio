@@ -1,11 +1,13 @@
+"use client"
+
 import NextLink from "next/link"
-import { useRouter } from "next/router"
+import { usePathname } from "next/navigation"
 
 const NavItem: React.FC<{ href: string; title: string }> = ({
   href,
   title,
 }) => {
-  let isActive = useRouter().pathname === href
+  let isActive = usePathname() === href
   return (
     <NextLink
       href={href}

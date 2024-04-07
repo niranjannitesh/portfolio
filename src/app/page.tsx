@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nitesh Kumar Niranjan — Product Designer / Developer",
     description:
-      "21-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
+      "22-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
   },
 }
 
@@ -84,7 +84,7 @@ const HomePage: NextPage = () => {
           <section className="w-full max-w-xl mx-auto mt-44">
             <h1 className="text-xl font-medium">Hey 🙋 I&apos;m Nitesh.</h1>
             <p className="mt-4 text-[#676767]">
-              I&apos;m a 21-year-old <s>designer, developer, and tinkerer</s>{" "}
+              I&apos;m a 22-year-old <s>designer, developer, and tinkerer</s>{" "}
               <span className="border-b text-transparent bg-clip-text bg-gradient-to-r from-[#A855F7] to-[#F59E0B] border-[#242424] py-1">
                 hacker
               </span>
@@ -102,7 +102,7 @@ const HomePage: NextPage = () => {
             <div className="mt-8">
               <p className="text-[#676767]">
                 <span className="text-[#CDCDCD] border-b border-[#242424] py-2 pr-1">
-                  Product, Growth & Engineering
+                  Tech Lead
                 </span>{" "}
                 at{" "}
                 <a href="https://atlys.com" target="_blank" rel="noreferrer">

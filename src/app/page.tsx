@@ -12,7 +12,7 @@ import clsx from "clsx"
 export const metadata: Metadata = {
   title: "Nitesh Kumar Niranjan — Product Designer / Developer",
   description:
-    "21-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
+    "2w-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
   openGraph: {
     title: "Nitesh Kumar Niranjan — Product Designer / Developer",
     description:

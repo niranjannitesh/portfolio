@@ -31,7 +31,7 @@ const Navigation: React.FC = () => {
         <nav className="bg-[#0F0F0F] border border-[#1B1B1B] p-1 rounded-full flex text-sm">
           <NavItem href="/" title="Home" />
           <NavItem href="/projects" title="Projects" />
-          <NavItem href="/blog" title="Blog" />
+          <NavItem href="/writing" title="Writing" />
           <NavItem href="/tools" title="Tools" />
         </nav>
       </div>

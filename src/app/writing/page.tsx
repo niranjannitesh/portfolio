@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Blog — theux.dev",
 }
 
-const BlogPage: NextPage = () => {
+const WritingPage: NextPage = () => {
   return (
     <>
       <div className="px-6">
@@ -23,4 +23,4 @@ const BlogPage: NextPage = () => {
   )
 }
 
-export default BlogPage
+export default WritingPage

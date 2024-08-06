@@ -221,7 +221,7 @@ const HomePage: NextPage = () => {
             </div>
           </section>
         </div>
-        <Photos />
+        
       </main>
     </>
   )

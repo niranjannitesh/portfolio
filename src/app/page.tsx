@@ -12,7 +12,7 @@ import clsx from "clsx"
 export const metadata: Metadata = {
   title: "Nitesh Kumar Niranjan — Product Designer / Developer",
   description:
-    "2w-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
+    "22-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
   openGraph: {
     title: "Nitesh Kumar Niranjan — Product Designer / Developer",
     description:
@@ -105,9 +105,9 @@ const HomePage: NextPage = () => {
                   Breaking things
                 </span>{" "}
                 at{" "}
-                <a href="https://stroop.ai" target="_blank" rel="noreferrer">
+                <a href="https://anuvaya.com" target="_blank" rel="noreferrer">
                   <span className="bg-[#0F0F0F] inline-flex items-center gap-2 border border-[#161616] px-5 py-2 rounded-full text-[#B9B9B9] font-medium ml-1">
-                    Stroop Labs
+                    Anuvaya Labs
                     <svg
                       fill="none"
                       viewBox="0 0 24 24"

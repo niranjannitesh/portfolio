@@ -12,11 +12,11 @@ import clsx from "clsx"
 export const metadata: Metadata = {
   title: "Nitesh Kumar Niranjan — Product Designer / Developer",
   description:
-    "22-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
+    "23-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
   openGraph: {
     title: "Nitesh Kumar Niranjan — Product Designer / Developer",
     description:
-      "22-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
+      "23-year-old hacker. I design things, I build things, sometimes I break things and then I put them back together. Building things from scratch for a while now.",
   },
 }
 
@@ -55,11 +55,11 @@ const HomePage: NextPage = () => {
       name: "Nitesh Kumar Niranjan",
       url: "https://theux.dev",
       sameAs: [
-        "https://twitter.com/niranjannitesh",
+        "https://x.com/niranjannitesh",
         "https://www.linkedin.com/in/niranjannitesh/",
         "https://dribbble.com/niranjannitesh",
         "https://github.com/niranjannitesh",
-        "https://stroop.ai/",
+        "https://vaya.so/",
       ],
     },
     {
@@ -84,7 +84,7 @@ const HomePage: NextPage = () => {
           <section className="w-full max-w-xl mx-auto mt-44">
             <h1 className="text-xl font-medium">Hey 🙋 I&apos;m Nitesh.</h1>
             <p className="mt-4 text-[#676767]">
-              I&apos;m a 22-year-old <s>designer, developer, and tinkerer</s>{" "}
+              I&apos;m a 23-year-old <s>designer, developer, and tinkerer</s>{" "}
               <span className="border-b text-transparent bg-clip-text bg-gradient-to-r from-[#A855F7] to-[#F59E0B] border-[#242424] py-1">
                 hacker
               </span>
@@ -105,7 +105,7 @@ const HomePage: NextPage = () => {
                   Breaking things
                 </span>{" "}
                 at{" "}
-                <a href="https://anuvaya.com" target="_blank" rel="noreferrer">
+                <a href="https://vaya.so" target="_blank" rel="noreferrer">
                   <span className="bg-[#0F0F0F] inline-flex items-center gap-2 border border-[#161616] px-5 py-2 rounded-full text-[#B9B9B9] font-medium ml-1">
                     Anuvaya Labs
                     <svg

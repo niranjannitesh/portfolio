@@ -1,0 +1,44 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import PageShell from "@/components/PageShell.astro"
+import { tools } from "@/data/tools"
+
+const description = "The things I use to build things."
+---
+
+<BaseLayout title="Tools" description={description}>
+  <PageShell heading="Tools">
+    <Fragment slot="intro">things I use to build things</Fragment>
+
+    <div class="grid -mx-4 gap-x-2 gap-y-1 sm:grid-cols-2">
+      {
+        tools.map((tool) => (
+          <a
+            href={tool.href}
+            target="_blank"
+            rel="noreferrer"
+            class="relative flex items-center gap-4 px-4 py-3 rounded-2xl group"
+          >
+            <div class="absolute inset-0 transition scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 bg-[#131316] rounded-2xl" />
+            <div class="relative z-10 flex items-center justify-center flex-none overflow-hidden w-9 h-9 rounded-[10px] bg-[#101014] ring-1 ring-white/[0.06]">
+              <img
+                src={tool.icon}
+                alt=""
+                width="36"
+                height="36"
+                loading="lazy"
+                class:list={[
+                  tool.fill ? "w-full h-full object-cover" : "w-5 h-5 object-contain",
+                ]}
+              />
+            </div>
+            <div class="relative z-10 min-w-0">
+              <p class="font-medium text-[#EDEDED]">{tool.name}</p>
+              <p class="mt-0.5 text-sm truncate text-[#5A5A5A]">{tool.kind}</p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </PageShell>
+</BaseLayout>

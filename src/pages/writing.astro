@@ -1,0 +1,71 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import PageShell from "@/components/PageShell.astro"
+import { notes, earlierNotes } from "@/data/notes"
+
+const description =
+  "Notes on agent infrastructure, context, memory, and speech models. Published at inside.anuvaya.com."
+
+function formatDate(iso: string) {
+  const [year, month, day] = iso.split("-").map(Number)
+  return new Date(Date.UTC(year, month - 1, day)).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  })
+}
+---
+
+<BaseLayout title="Writing" description={description}>
+  <PageShell heading="Writing">
+    <Fragment slot="intro">dumb things I always wanted to write about</Fragment>
+
+    <div class="flex flex-col space-y-14">
+      {
+        notes.map((note) => (
+          <article class="relative group">
+            <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 group-hover:scale-100 group-hover:opacity-100 bg-[#131316] sm:-inset-x-6 sm:rounded-2xl" />
+            <p class="relative z-10 text-sm text-[#5A5A5A]">
+              <time datetime={note.date}>{formatDate(note.date)}</time>
+            </p>
+            <h2 class="relative z-10 mt-2 font-medium text-[#EDEDED]">
+              <a href={note.href} target="_blank" rel="noreferrer">
+                <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl" />
+                {note.title}
+              </a>
+            </h2>
+            <p class="relative z-10 mt-3 text-sm leading-7 text-[#676767]">
+              {note.description}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+
+    <section class="pt-16 mt-20 border-t border-[#1B1B1B]">
+      <h2 class="text-sm text-[#5A5A5A]">Further back</h2>
+      <div class="flex flex-col mt-10 space-y-14">
+        {
+          earlierNotes.map((note) => (
+            <article class="relative group">
+              <div class="absolute z-0 transition scale-95 opacity-0 -inset-y-6 -inset-x-4 group-hover:scale-100 group-hover:opacity-100 bg-[#131316] sm:-inset-x-6 sm:rounded-2xl" />
+              <p class="relative z-10 text-sm text-[#5A5A5A]">
+                <time datetime={note.date}>{formatDate(note.date)}</time>
+              </p>
+              <h3 class="relative z-10 mt-2 font-medium text-[#EDEDED]">
+                <a href={note.href} target="_blank" rel="noreferrer">
+                  <span class="absolute z-20 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl" />
+                  {note.title}
+                </a>
+              </h3>
+              <p class="relative z-10 mt-3 text-sm leading-7 text-[#676767]">
+                {note.description}
+              </p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </PageShell>
+</BaseLayout>

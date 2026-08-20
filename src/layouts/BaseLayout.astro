@@ -1,0 +1,89 @@
+---
+import Navigation from "@/components/Navigation.astro"
+import "@/styles/globals.css"
+
+interface Props {
+  title?: string
+  description: string
+}
+
+const { title, description } = Astro.props
+
+const siteName = "Nitesh Kumar Niranjan"
+const pageTitle = title ? `${title} · ${siteName}` : siteName
+const canonical = new URL(Astro.url.pathname, Astro.site).href
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteName,
+    url: "https://theux.dev",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: siteName,
+    url: "https://theux.dev",
+    worksFor: {
+      "@type": "Organization",
+      name: "Anuvaya",
+      url: "https://anuvaya.com",
+    },
+    sameAs: [
+      "https://x.com/niranjannitesh",
+      "https://github.com/niranjannitesh",
+      "https://www.linkedin.com/in/niranjannitesh/",
+      "https://dribbble.com/niranjannitesh",
+    ],
+  },
+]
+---
+
+<!doctype html>
+<html lang="en" class="h-full antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="canonical" href={canonical} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en_IN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@niranjannitesh" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(structuredData)}
+    />
+  </head>
+  <body
+    class="font-sans antialiased text-white bg-x-black selection:bg-white/10"
+  >
+    <div
+      class="flex flex-col min-h-screen bg-repeat"
+      style="background-image: url(/img/bg-noise.png)"
+    >
+      <div
+        class="fixed top-0 h-[2px] bg-gradient-to-r from-[#A855F7] to-[#F59E0B] w-full"
+      >
+      </div>
+      <slot />
+      <div
+        class="fixed inset-x-0 bottom-0 z-40 h-32 pointer-events-none bg-repeat bg-x-black"
+        style="background-image: url(/img/bg-noise.png); -webkit-mask-image: linear-gradient(to top, #000 45%, transparent); mask-image: linear-gradient(to top, #000 45%, transparent)"
+      >
+      </div>
+      <Navigation />
+    </div>
+  </body>
+</html>

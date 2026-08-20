@@ -1,0 +1,42 @@
+---
+const items = [
+  { href: "/", title: "Home" },
+  { href: "/projects", title: "Projects" },
+  { href: "/writing", title: "Writing" },
+  { href: "/tools", title: "Tools" },
+]
+
+// Astro emits directory-style URLs, so /projects/ and /projects are the same page.
+const current = Astro.url.pathname.replace(/\/+$/, "") || "/"
+---
+
+<div
+  class="fixed left-0 right-0 z-50 flex justify-center bottom-4 sm:bottom-12"
+>
+  <div class="flex justify-center w-full max-w-xl mx-auto sm:justify-start">
+    <nav
+      class="bg-[#0F0F0F] border border-[#1B1B1B] p-1 rounded-full flex text-sm"
+    >
+      {
+        items.map((item) => {
+          const isActive = current === item.href
+          return (
+            <a
+              href={item.href}
+              aria-current={isActive ? "page" : undefined}
+              class:list={[
+                "font-medium px-5 py-2.5 rounded-full relative transition-all",
+                isActive && "bg-[#1A1A1A]",
+              ]}
+            >
+              {item.title}
+              {isActive && (
+                <span class="absolute bottom-0 h-px inset-x-3 bg-gradient-to-r from-pink-500/0 via-pink-500/40 to-pink-500/0" />
+              )}
+            </a>
+          )
+        })
+      }
+    </nav>
+  </div>
+</div>
